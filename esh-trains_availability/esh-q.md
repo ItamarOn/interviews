@@ -1,0 +1,2 @@
+python method the check what should be the minimum number of trains available at any station in the start of the day.
+The given data is schedule of trains arrival and departure rom station A to B and from B to A.
