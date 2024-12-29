@@ -36,21 +36,24 @@ class StringBuffer:
 # Example Usage
 start_time = time.time()
 
+buffer1 = StringBuffer(stream_id=123, buffer_size=5)
+buffer2 = StringBuffer(stream_id=456, buffer_size=10)
+buffer1.add("Hello")
+buffer2.add("im using only small letters which is a bit weird")
+buffer1.add(", World!")
+buffer2.add("every time i flush i will print 10 characters")
+buffer2.add("do re me")
+buffer1.add("Again and again")
+
+
 # buffer1 = StringBuffer(stream_id=123, buffer_size=5)
 # buffer2 = StringBuffer(stream_id=456, buffer_size=10)
-# buffer1.add("Hello")
-# buffer2.add("im using only small letters which is a bit weird")
-# buffer1.add(", World!")
-# buffer2.add("every time i flush i will print 10 characters")
-# buffer2.add("do re me")
-# buffer1.add("Again and again")
-
-for i in range(1000):
-    buffer1 = StringBuffer(stream_id=123, buffer_size=5)
-    buffer2 = StringBuffer(stream_id=456, buffer_size=10)
-    buffer1.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
-    buffer2.add("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb")
-    # Execution Time: 0.015397787094116211 seconds
+#
+#
+# for i in range(10):
+#     buffer1.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+#     buffer2.add("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb")
+#     # Execution Time: 0.017482995986938477 seconds
 
 
 end_time = time.time()
