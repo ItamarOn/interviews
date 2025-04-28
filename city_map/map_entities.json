@@ -1,0 +1,100 @@
+{
+  "houses": [
+    {
+      "house_address": "33",
+      "entity_id": "house-a",
+      "neighborhood_id": "nbh-bavli"
+    },
+    {
+      "house_address": "152",
+      "entity_id": "house-b",
+      "neighborhood_id": "nbh-bavli"
+    },
+    {
+      "house_address": "1",
+      "entity_id": "house-c",
+      "neighborhood_id": "nbh-bavli"
+    },
+    {
+      "house_address": "1000",
+      "entity_id": "house-d",
+      "neighborhood_id": "nbh-ramataviv"
+    },
+    {
+      "house_address": "2000",
+      "entity_id": "house-e",
+      "neighborhood_id": "nbh-ramataviv"
+    }
+  ],
+  "junctions": [
+    {
+      "entity_id": "junction-rokach",
+      "exits": [
+        "city-tlv",
+        "highway-1"
+      ]
+    }
+  ],
+  "neighborhoods": [
+    {
+      "entity_id": "nbh-bavli",
+      "sg_id": "sg-1",
+      "city_id": "city-tlv",
+      "exits": [
+        "junction-rokach"
+      ]
+    },
+    {
+      "entity_id": "nbh-ramataviv",
+      "sg_id": "sg-2",
+      "city_id": "city-tlv",
+      "exits": [
+        "junction-rokach"
+      ]
+    }
+  ],
+  "highways": [
+    {
+      "entity_id": "highway-1",
+      "exits": [
+        "airport-bengurion"
+      ]
+    }
+  ],
+  "security_gates": [
+    {
+      "entity_id": "sg-1",
+      "entrance_allowed_ranges": [
+        [
+          10,
+          50
+        ],
+        [
+          60,
+          200
+        ]
+      ],
+      "exit_allowed_ranges": "all"
+    },
+    {
+      "entity_id": "sg-2",
+      "entrance_allowed_ranges": "all",
+      "exit_allowed_ranges": [
+        [
+          500,
+          1500
+        ]
+      ]
+    }
+  ],
+  "cities": [
+    {
+      "entity_id": "city-tlv"
+    }
+  ],
+  "airports": [
+    {
+      "entity_id": "airport-bengurion"
+    }
+  ]
+}

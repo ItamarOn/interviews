@@ -1,0 +1,12 @@
+The Project - OCR Workflow for Document Processing Using AWS Lambda
+
+This project leverages AWS services to automate document processing using OCR (pdf2text). The workflow starts with a PDF
+file being uploaded by user to an S3 bucket's 'upload' folder. This triggers an SQS queue, which invokes Lambda #1.
+Lambda #1 initiates the OCR process by calling Amazon Textract's start analysis using an SNS topic ARN for notification.
+Once the analysis begins, the PDF file is moved to an 'in_progress' folder in S3.
+
+When Textract completes the OCR analysis, the result is sent to an SNS topic, triggering another SQS queue that invokes
+Lambda #2. Lambda #2 retrieves the OCR output, stores the results as JSON in either a 'json_success' or 'json_failed'
+folder, and moves the processed PDF file to an 'archived_success' or 'archived_failed' folder.
+
+This end-to-end, secure, and automated solution ensures efficient document processing with real-time OCR results.

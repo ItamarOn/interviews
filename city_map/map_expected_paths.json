@@ -1,0 +1,37 @@
+{
+  "test1": [
+    "house-a",
+    "sg-1",
+    "nbh-bavli",
+    "junction-rokach",
+    "city-tlv",
+    "nbh-ramataviv",
+    "sg-2",
+    "house-d"
+  ],
+  "test2": [
+    "house-a",
+    "sg-1",
+    "nbh-bavli",
+    "junction-rokach",
+    "highway-1",
+    "airport-bengurion"
+  ],
+  "test3": [
+    "house-e",
+    "sg-2"
+  ],
+  "test4": [
+    "house-d",
+    "sg-2",
+    "nbh-ramataviv",
+    "junction-rokach",
+    "city-tlv",
+    "nbh-bavli",
+    "sg-1"
+  ],
+  "test5": [
+    "house-e",
+    "house-d"
+  ]
+}
