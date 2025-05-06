@@ -4,6 +4,7 @@ from fastapi import FastAPI, Request, HTTPException
 from datetime import datetime, timedelta
 
 app = FastAPI()
+# be sure redis is up: `docker run -p 6379:6379 redis`
 r = redis.Redis(host="localhost", port=6379, db=0)
 
 MAX_REQUESTS = 5
