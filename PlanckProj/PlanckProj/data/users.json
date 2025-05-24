@@ -1,0 +1,12 @@
+[
+  {"name": "A", "address": "Street 1", "info" :{"some info": "123", "extra": "EE 123", "score": 10}},
+  {"name": "B", "address": "Street 1", "info" :{"some info": "456", "extra": "EE 456", "score": 20}},
+  {"name": "C", "address": "Street 3", "info" :{"some info": "789", "extra": "EE 789", "score": 30}},
+  {"name": "D", "address": "Street 4", "info" :{"some info": "112", "extra": "EE 112", "score": 40}},
+  {"name": "E", "address": "Street 5", "info" :{"some info": "113", "extra": "EE 113", "score": 50}},
+  {"name": "F", "address": "Street 6", "info" :{"some info": "114", "extra": "EE 114", "score": 60}},
+  {"name": "F", "address": "Street 7", "info" :{"some info": "115", "extra": "EE 115", "score": 70}},
+  {"name": "H", "address": "Street 8", "info" :{"some info": "116", "extra": "EE 116", "score": 80}},
+  {"name": "I", "address": "Street 9", "info" :{"some info": "117", "extra": "EE 117", "score": 90}},
+  {"name": "J", "address": "Street 0", "info" :{"some info": "118", "extra": "EE 118", "score": 100}}
+]
